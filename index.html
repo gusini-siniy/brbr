@@ -20,10 +20,10 @@
 </head>
 <body>
     <div class="tech">
-        <button id="project"></button>
-        <button id="project"></button>
-        <button id="project"></button>
-        <button id="project"></button>
+        <button id="project" onclick="project();"></button>
+        <button id="biography" onclick="biography();"></button>
+        <button id="nasled" onclick="nasled();"></button>
+        <button id="istoch" onclick="istoch();"></button>
     </div>
     <header>
         <div class="nav-cont">
@@ -33,10 +33,10 @@
                     <label class="nav-label-pl"><h2>.</h2></label>
                     <label class="nav-label-pl"><h2>.</h2></label>
                     <label class="nav-label-pl"><h2>.</h2></label>
-                    <label class="nav-label"><h2>#О Проекте</h2></label>
-                    <label class="nav-label"><h2>#Биография</h2></label>
-                    <label class="nav-label"><h2>#Наследие</h2></label>
-                    <label class="nav-label"><h2>Источники</h2></label>
+                    <label class="nav-label" for="project"><h2>#О Проекте</h2></label>
+                    <label class="nav-label" for="biography"><h2>#Биография</h2></label>
+                    <label class="nav-label" for="nasled"><h2>#Наследие</h2></label>
+                    <label class="nav-label" for="istoch"><h2>Источники</h2></label>
                 </div>
             </nav>
         </div>
@@ -49,7 +49,7 @@
                 <h1>Хворостовский:Великая Сибирь.</h1>
                 <div class="images"><img></div>
                 <div class="paragraph-section">
-                    <p>Биография И Наследие Великого Сибирского Певца.</p>
+                    <p>Биография и наследие великого сибирского Певца.</p>
                     <span class="tags"><p>#хворостовский #красноярск #биография</p></span>
                     <button class="button-section-1"><i class="fa-solid fa-arrow-down"></i></button>
                 </div>
@@ -61,7 +61,7 @@
                 <i class="fa-solid fa-circle-info" id="icon"></i>
                 <h1>О Проекте</h1>
                 <div class="images"><img></div>
-                <div class="paragraph-section">
+                <div class="paragraph-section" id="project">
                     <p>Данный Проект Создан Учеником Школы №161 Логиновым Ростиславом</p>
                 </div>
             </div>
@@ -122,24 +122,27 @@
         </article>
     </main>
     <footer>
+        <h3>Проект Создан Учеником 5 "Г" Класса Логиновым Ростиславом.</h3>
+        <h4>Использована информация с сайтов (ВСЕ ПРАВА НА ФОТО ПРИНАДЛЕЖАТ ИХ ЗАКОНЫМ ВЛАДЕЛЬЦАМ.):</h4>
         <div class="footer-content">
             <div class="istochniki">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>https://www.avantgardecentre.gr/ru/20171129_article_ru/</li>
+                    <li>feelek.livejournal.com</li>
                 </ul>
             </div>
         </div>
     </footer>
-    https://unesco.ru/news/giant-pillars-of-siberia/
-    https://www.avantgardecentre.gr/ru/20171129_article_ru/
     <script>
         AOS.init({
         duration: 1000,
         once: false
         });
+        function project () {
+            document.querySelector('#project').scrollIntoView({ 
+            behavior: 'smooth' 
+            });
+        }
     </script>
 
 

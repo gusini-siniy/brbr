@@ -2,7 +2,8 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: rgb(12, 12, 12);
+background: #290a33;
+background: linear-gradient(62deg, rgba(41, 10, 51, 1) 0%, rgba(9, 9, 26, 1) 50%, rgba(5, 31, 25, 1) 100%);
     overflow-x: hidden;
 }
 
@@ -19,7 +20,7 @@ body {
 }
 
 .section-1 {
-    background-image: url('stolbiki.jpg');
+    background-image: url('https://img-fotki.yandex.ru/get/54799/24332511.15f/0_c3a62_191d595a_orig.jpg');
     background-size: cover;
 }
 
@@ -146,4 +147,11 @@ hr {
     padding-left: 25%;
     padding-top: 10%;
     border-radius: 5%;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5%
 }
