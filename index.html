@@ -69,7 +69,7 @@
         <section  data-aos="fade-left" duration="2100" class="section-2">
             <div class="section-2-content">
                 <i class="fa-solid fa-graduation-cap"></i>
-                <h1>Хворостовский:Биография</h1>
+                <h1 id="biography">Хворостовский:Биография</h1>
                 <div class="images"><img></div>
                 <div class="paragraph-section">
                     <p>Дмитрий Александрович Хворостовский родился 16 октября 1962 года в Красноярске. Отец Дмитрия — Александр Степанович Хворостовский, инженер-химик — любил петь и музицировал на фортепиано, кроме того, он собрал большую коллекцию записей звёзд мировой оперной сцены. Некоторое Время Хворостовский Занимался У Бориса Шиндарёва у Которого Он Учился Петь Тенором. Он Окончил Красноярское Педагогическое Училище и Институт Искуств.</p>
@@ -87,7 +87,7 @@
             <div class="aricl-1-content">
                 <div class="articl-header">
                     <div class="images"><img></div>
-                    <h1>Наследие</h1>
+                    <h1 id="nasled">Наследие</h1>
                     <h2>Частичка Хворостовского</h2>
                 </div>
                 <div class="paragraph-section">
@@ -96,24 +96,24 @@
                         <h1>Международный Аэропорт Города Красноярск Был Назван Именем Хворостовского</h1>
                         <h3>Указом Президента РФ от 31 мая 2019 г. Международному Аэропорту Города Красноярска было Присвоено Имя Д.А. Хворостовского</h3>
                     </div>
-                    <div>
-                        <img sr.c="brbrjpg" class="card-img">
+                    <div class="info-card">
+                        <img sr.c="hvorost.jpg" class="card-img">
                         <h1>В Школе 161</h1>
                         <h3>В Школе 161 Напротив Кабинета Музыки Нарисован Д.А. Хворостовский.</h3>
                     </div>
                     <div class="info-card">
-                        <img src="brbr.jpg"  class="card-img">
+                        <img src="images (18).jpeg" class="card-img">
                         <h1>Интересные Факты.</h1>
                         <h3>1. У него было 4 детей от двух браков. 2. 16 октября 2019 года на могиле певца был открыт памятник. 3. В 2016 году в интервью Хворостовский заявил, что не верит в Бога, а «загробной жизни нет и не может быть».</h3>
                     </div>
                     <br>
                     <div class="info-card">
-                        <img src="brbr.jpg"  class="card-img">
+                        <img src="meteor.jpg"  class="card-img">
                         <h1>В честь Его Назван Метеор.</h1>
                         <h3>Назвали его "Хворостовский"</h3>
                     </div>
                     <div class="info-card">
-                        <img src="brbr.jpg" class="card-img">
+                        <img src="grazh.jpg" class="card-img">
                         <h1>У Него Были Гражданства Двух Стран</h1>
                         <h3>Великобритании И России.</h3>
                     </div>
@@ -124,7 +124,7 @@
     <footer>
         <h3>Проект Создан Учеником 5 "Г" Класса Логиновым Ростиславом.</h3>
         <h4>Использована информация с сайтов (ВСЕ ПРАВА НА ФОТО ПРИНАДЛЕЖАТ ИХ ЗАКОНЫМ ВЛАДЕЛЬЦАМ.):</h4>
-        <div class="footer-content">
+        <div id="istoch"class="footer-content">
             <div class="istochniki">
                 <ul>
                     <li>https://www.avantgardecentre.gr/ru/20171129_article_ru/</li>
@@ -140,6 +140,21 @@
         });
         function project () {
             document.querySelector('#project').scrollIntoView({ 
+            behavior: 'smooth' 
+            });
+        }
+        function biography () {
+            document.querySelector('#biography').scrollIntoView({ 
+            behavior: 'smooth' 
+            });
+        }
+        function nasled () {
+            document.querySelector('#nasled').scrollIntoView({ 
+            behavior: 'smooth' 
+            });
+        }
+        function istoch () {
+            document.querySelector('#istoch').scrollIntoView({ 
             behavior: 'smooth' 
             });
         }
